@@ -24,6 +24,16 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+EVO_BUILD_TYPE := Official
+TARGET_DISABLE_EPPE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_HAS_UDFPS := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
 PRODUCT_NAME := lineage_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
